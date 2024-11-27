@@ -9,10 +9,10 @@ define('DB_NAME', 'pote7495_datawork');
 define('DB_PORT', '3306');
 
 // constantes de nome e versão do aplicativo
-define('APPNAME', '&copy; DataWork 2011-2021');
-define('APPVERSION', '0.346');
-define('APPDATE', '25/03/2021');
-define('APPCLIENTE', 'EDKE Marketing Digital');
+define('APPNAME', '&copy; DataWork 2011-2024');
+define('APPVERSION', '0.347');
+define('APPDATE', '27/11/2024');
+define('APPCLIENTE', 'Reobote Filmes');
 
 // constantes dos caminhos de templates de header e footer
 define('HEADER_TEMPLATE', __DIR__ . '/include/header.php');
@@ -31,7 +31,7 @@ if (!defined('ABSPATH') )
 
 // caminho no server para o sistema
 if (!defined('BASEURL') )
-	define ('BASEURL', '/datawork/portaldenegocios/manager/'); 
+	define ('BASEURL', '/datawork7/'); 
   
 // habilita todas as exibições de erros
 ini_set('display_errors', true);
