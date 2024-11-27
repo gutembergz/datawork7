@@ -1,0 +1,17 @@
+RewriteEngine On
+ErrorDocument 404 "/portaldenegocios/manager/404.php"
+ErrorDocument 403 "/portaldenegocios/manager/403.php"
+
+## Impedindo a listagem de qualquer arquivo e diretório
+Options -Indexes
+
+##<IfModule mod_rewrite.c>
+##	RewriteEngine On
+##	RewriteCond %{REQUEST_FILENAME} !-f
+##	RewriteCond %{REQUEST_FILENAME} !-d
+##	RewriteRule ^(.*)$ /manager/index.php?q=$1 [L]
+##</IfModule>
+
+
+
+

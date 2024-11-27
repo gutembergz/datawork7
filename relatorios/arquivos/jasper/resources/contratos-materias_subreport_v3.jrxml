@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.4.3  -->
+<!-- 2021-02-17T17:33:40 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subreport_materias" pageWidth="554" pageHeight="150" columnWidth="514" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" uuid="96db6770-c583-4e34-8c47-2f4c67600ced">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="idContrato" class="java.lang.String"/>
+	<parameter name="tipo_materia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="status_materia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="producao_materia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT edke.materiasContratadas.dataProducao, edke.materiasContratadas.dataLimite, edke.materiasContratadas.idStatus,
+(SELECT materias.materia FROM edke.materias WHERE materias.id = materiasContratadas.idMateria) AS materiaCt,
+(SELECT status.status FROM edke.status WHERE status.id = materiasContratadas.idStatus) AS status
+FROM edke.materiasContratadas
+WHERE edke.materiasContratadas.idContrato = $P{idContrato} 
+$P!{producao_materia} 
+$P!{tipo_materia} 
+$P!{status_materia}
+
+
+
+]]>
+	</queryString>
+	<field name="dataProducao" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="dataProducao"/>
+		<property name="com.jaspersoft.studio.field.label" value="dataProducao"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas"/>
+		<fieldDescription><![CDATA[Data para produzir]]></fieldDescription>
+	</field>
+	<field name="dataLimite" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="dataLimite"/>
+		<property name="com.jaspersoft.studio.field.label" value="dataLimite"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas"/>
+		<fieldDescription><![CDATA[Limite da data de produção]]></fieldDescription>
+	</field>
+	<field name="idStatus" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idStatus"/>
+		<property name="com.jaspersoft.studio.field.label" value="idStatus"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="materiaCt" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="materiaCt"/>
+		<property name="com.jaspersoft.studio.field.label" value="materiaCt"/>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="410" y="3" width="122" height="16" forecolor="#FF0000" uuid="235e731f-3124-4462-82e9-be58136cd8d6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a73b0231-8a57-471d-862a-94eba9d53955"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box rightPadding="3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="290" y="3" width="120" height="16" uuid="0edd6f50-f9ba-4108-9a36-056045877cec">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA["Data Limite: " + (new SimpleDateFormat("dd/MM/yyyy").format($F{dataLimite}))]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="-20" y="3" width="200" height="16" uuid="c610cc94-bb6a-4a72-8bd2-a6a0006072f2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box rightPadding="3"/>
+				<textFieldExpression><![CDATA[$F{materiaCt}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="180" y="3" width="110" height="16" uuid="641a5132-cacd-4a4e-a5f5-fb76ed0bc088">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA["Produção: " + (new SimpleDateFormat("dd/MM/yyyy").format($F{dataProducao}))]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

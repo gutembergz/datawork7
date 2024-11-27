@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.4.3  -->
+<!-- 2021-02-12T18:14:52 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Subreport Ads Responsivos" pageWidth="555" pageHeight="320" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Error" uuid="bbd964ee-d877-4a3e-92ff-b6f9c9da85cf">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="NO_DATA_ADAPTER"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="478"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="522"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<parameter name="idMateriaContratada" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM materiasContratadas_googleAdsChamadas WHERE idMateriaContratada = $P{idMateriaContratada}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idMateriaContratada" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idMateriaContratada"/>
+		<property name="com.jaspersoft.studio.field.label" value="idMateriaContratada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="urlFinalChamada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="urlFinalChamada"/>
+		<property name="com.jaspersoft.studio.field.label" value="urlFinalChamada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="urlVisualizacaoChamada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="urlVisualizacaoChamada"/>
+		<property name="com.jaspersoft.studio.field.label" value="urlVisualizacaoChamada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo1Chamada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo1Chamada"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo1Chamada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo2Chamada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo2Chamada"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo2Chamada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao1Chamada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricao1Chamada"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricao1Chamada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao2Chamada" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricao2Chamada"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricao2Chamada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contaTitulosChamada" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="contaTitulosChamada"/>
+		<property name="com.jaspersoft.studio.field.label" value="contaTitulosChamada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contaDescricoesChamada" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="contaDescricoesChamada"/>
+		<property name="com.jaspersoft.studio.field.label" value="contaDescricoesChamada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numeroTel" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="numeroTel"/>
+		<property name="com.jaspersoft.studio.field.label" value="numeroTel"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomeEmpresa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeEmpresa"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeEmpresa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAdsChamadas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25">
+			<staticText>
+				<reportElement x="0" y="4" width="555" height="18" uuid="b6a6a90f-b8e3-48f0-a35f-5b0fc44c63fa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Anúncios Somente para Chamadas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="83" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="19" width="555" height="16" forecolor="#6C757D" uuid="a627b249-fa7a-4c4a-92ae-33ac764dc481">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box rightPadding="3"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomeEmpresa}  + " | " + $F{titulo1Chamada}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="35" width="555" height="16" forecolor="#28A745" uuid="93ad96d9-579f-47ca-8285-bdbef935fb28">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box rightPadding="3"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{urlFinalChamada}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="51" width="555" height="27" forecolor="#6C757D" uuid="dfe39d18-c7ae-4e23-ac4e-5cba5b3cc59c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box bottomPadding="6" rightPadding="3">
+					<pen lineWidth="0.0" lineColor="#6B6B6B"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descricao1Chamada} + " | " + $F{descricao2Chamada}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="3" width="555" height="16" forecolor="#007BFF" uuid="83b37606-6286-4160-acfc-f94fdd349335">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box rightPadding="3"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ligar para " + $F{numeroTel}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

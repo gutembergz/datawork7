@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.4.3  -->
+<!-- 2021-02-12T14:32:40 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="googleadsResponsivos" pageWidth="555" pageHeight="250" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="bbd964ee-d877-4a3e-92ff-b6f9c9da85cf">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="NO_DATA_ADAPTER"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="478"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="522"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<parameter name="idMateriaContratada" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM `materiasContratadas_googleAds`
+WHERE  `materiasContratadas_googleAds`.`idMateriaContratada` = $P{idMateriaContratada}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idMateriaContratada" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idMateriaContratada"/>
+		<property name="com.jaspersoft.studio.field.label" value="idMateriaContratada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="urlFinal" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="urlFinal"/>
+		<property name="com.jaspersoft.studio.field.label" value="urlFinal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="urlVisualizacao" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="urlVisualizacao"/>
+		<property name="com.jaspersoft.studio.field.label" value="urlVisualizacao"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo1"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo2"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo3"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo4" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo4"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo4"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo5" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo5"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo5"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo6" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo6"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo6"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo7" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo7"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo7"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo8" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo8"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo8"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo9" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo9"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo9"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo10" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo10"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo10"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo11" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo11"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo11"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo12" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo12"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo12"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo13" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo13"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo13"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo14" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo14"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo14"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo15" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo15"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo15"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricao1"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricao1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricao2"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricao2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricao3"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricao3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descricao4" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descricao4"/>
+		<property name="com.jaspersoft.studio.field.label" value="descricao4"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contaTitulos" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="contaTitulos"/>
+		<property name="com.jaspersoft.studio.field.label" value="contaTitulos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contaDescricoes" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="contaDescricoes"/>
+		<property name="com.jaspersoft.studio.field.label" value="contaDescricoes"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="materiasContratadas_googleAds"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="4" width="555" height="18" forecolor="#000000" uuid="b6a6a90f-b8e3-48f0-a35f-5b0fc44c63fa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Anúncios Responsivos de Pesquisa]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="66" splitType="Stretch">
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="4" width="555" height="16" forecolor="#007BFF" uuid="a627b249-fa7a-4c4a-92ae-33ac764dc481">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box rightPadding="3"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{titulo1}  + " | " + $F{titulo2} + " | " + $F{titulo3} + " (Mais " + $F{contaTitulos} + ")"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="22" width="555" height="16" forecolor="#28A745" uuid="93ad96d9-579f-47ca-8285-bdbef935fb28">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box rightPadding="3"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{urlFinal}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="38" width="555" height="27" forecolor="#6C757D" uuid="dfe39d18-c7ae-4e23-ac4e-5cba5b3cc59c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box bottomPadding="6" rightPadding="3">
+					<pen lineWidth="0.0" lineColor="#6B6B6B"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descricao1} + " | " + $F{descricao2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

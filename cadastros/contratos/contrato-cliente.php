@@ -1,0 +1,1 @@
+Acesse os dados deste <a target="_blank" href="../clientes/form-edit.php?id=<?php echo $contrato['idCliente']; ?>">cliente.</a> <i class="fas fa-external-link-alt text-muted" title="Abre em uma nova janela."></i>
