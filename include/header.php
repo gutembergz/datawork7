@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="<?php echo BASEURL; ?>lib/ekko-lightbox/ekko-lightbox.css">
         <link rel="stylesheet" href="<?php echo BASEURL; ?>lib/DataTables/datatables.css">
         <link rel="stylesheet" href="<?php echo BASEURL; ?>lib/DataTables/RowGroup-1.1.2/css/rowGroup.dataTables.min.css"></script>
-        <link rel="icon" href="<?php echo BASEURL . "images/brand/favicon.svg"; ?>">   
+        <link rel="icon" href="<?php echo BASEURL . "images/brand/logo_reobote.png"; ?>">   
         <script src="<?php echo BASEURL; ?>lib/tinymce/tinymce.min.js"></script>
         <title>DataWork &middot; <?php echo $pageTitle = isset($pageTitle) ? $pageTitle : 'Página sem Título'; ?></title>
     </head>
