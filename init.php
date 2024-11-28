@@ -10,7 +10,7 @@ define('DB_PORT', '3306');
 
 // constantes de nome e versão do aplicativo
 define('APPNAME', '&copy; DataWork 2011-2024');
-define('APPVERSION', '0.347');
+define('APPVERSION', '0.348');
 define('APPDATE', '27/11/2024');
 define('APPCLIENTE', 'Reobote Filmes');
 
