@@ -16,7 +16,7 @@ if (isLoggedIn()) {
         <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo BASEURL?>lib/fontawesome/css/all.css">
         <link rel="stylesheet" href="lib/css/signin.css">
-        <link rel="icon" href="<?php echo BASEURL; ?>images/brand/favicon.svg">
+        <link rel="icon" href="<?php echo BASEURL; ?>images/brand/logo_reobote.png">
         <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
         <title>DataWork <?php echo APPVERSION;?> &middot; Login</title>
     </head>
@@ -24,7 +24,7 @@ if (isLoggedIn()) {
     <body class="text-center">
 
         <form class="form-signin" method="POST" autocomplete="off">
-            <img class="mb-4" src="images/brand/icon_portal.svg" alt="" width="90" height="90">
+            <img class="mb-4" src="images/brand/logo_reobote.png" alt="" width="90" height="90">
 
             <h1 class="h3 mb-3 font-weight-normal">Efetuar Login</h1>
 
